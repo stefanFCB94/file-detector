@@ -14,12 +14,15 @@
         "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-		  "outDir": "dist/",
-		  "rootDir": "src",
-		  "typeRoots": [ "node_modules/@types" ]
+        "outDir": "dist/",
+        "rootDir": "src",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     },
     "exclude": [
-		  "node_modules",
+        "node_modules",
+        "!node_modules/@types",
         "typings/browser",
         "typings/browser.d.ts"
     ],
