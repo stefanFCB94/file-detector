@@ -17,13 +17,18 @@
     "prepublish": "gulp build",
     "postversion": "git push && git push --tags && npm publish"
   },
-  "keywords": [ ],
+  "keywords": [],
   "author": "Stefan Läufle",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "config": "^1.24.0",
+    "mime": "^1.3.4",
+  },
   "devDependencies": {
     "@types/chai": "^3.4.34",
+    "@types/config": "0.0.31",
     "@types/es6-promise": "0.0.32",
+    "@types/mime": "0.0.29",
     "@types/mocha": "^2.2.35",
     "@types/musicmetadata": "^2.0.2",
     "@types/node": "^6.0.60",
