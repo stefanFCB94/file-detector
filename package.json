@@ -6,7 +6,7 @@
   "typings": "dist/lib/index",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/stefanFCB94/file-detectors"
   },
   "files": [
     "dist/"
