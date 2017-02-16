@@ -1,6 +1,8 @@
-# Title
+# Detect files in one or more directories
 
-Description
+Module reads recursively one or more directories and give back all found files.
+The directories can be given as function parameter or can be configured in a configuration file.
+The found files can be filtered by their MIME type via a configuration file.
 
 ## Getting Started
 
