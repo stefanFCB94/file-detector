@@ -1,0 +1,11 @@
+{
+    "File_Detection": {
+        "supported_mime_types": [
+            "audio/mpeg"
+        ],
+    
+        "directories": [
+            "./src/test/testdir"
+        ]
+    }
+}
