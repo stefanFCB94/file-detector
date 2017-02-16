@@ -59,10 +59,10 @@ The config file must have the following structure:
 ```
 
 The config file has the following keys:
-|Key|Description|
-|---|---|
-|supported_mime_types|If given the found files will be filterd, only files of the configured MIME types will be given back. If no config file is found, the key is not given in the config file or the array is empty, all found files will be given back.|
-|directories|If no parameter is given for the function, the function tries to detect the directories, which should be read, from this config key.|
+Key | Description
+--- | ---
+supported_mime_types | If given the found files will be filterd, only files of the configured MIME types will be given back. If no config file is found, the key is not given in the config file or the array is empty, all found files will be given back.
+directories | If no parameter is given for the function, the function tries to detect the directories, which should be read, from this config key.
 
 ## Testing the module
 
