@@ -3,7 +3,6 @@ import * as mime from 'mime';
 import * as path from 'path';
 import * as config from 'config';
 
-
 export interface FileInformation {
     path: string,
     size: number,
@@ -56,8 +55,19 @@ export function getFilesOfDir(dir?: string | Array<string>): Promise<Array<FileI
                 files = files.concat(res[i]);
             }
 
+            // Remove duplicate files
+            files = files.filter((file, index, self) => {
+                let i: number = self.findIndex((t) => { 
+                    return t.path === file.path; 
+                });
+                return i === index; 
+            });
+
             resolve(files);
-        });        
+        }).catch((err) => {
+            reject(err);
+        })
+                
     });    
 }
 
@@ -132,8 +142,3 @@ function getFileInformation(path: string): Promise<Array<FileInformation>> {
         });
     });
 }
-
-
-getFilesOfDir().then((res) => {
-    console.log(res); 
-});
